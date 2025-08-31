@@ -1,0 +1,156 @@
+/* style.css */
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Keep content above */
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: #0077b6;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 14px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.search-box button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #0077b6;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background: #005f86;
+}
+
+.weather-info {
+  text-align: center;
+  padding: 15px;
+}
+
+.weather-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.weather-info p {
+  font-size: 1.3rem;
+  margin: 6px 0;
+}
+
+.weather-info img {
+  margin-top: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+  }
+
+  .weather-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .weather-info p {
+    font-size: 1.1rem;
+  }
+
+  .weather-info img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .search-box input {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .search-box button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .weather-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .weather-info p {
+    font-size: 1rem;
+  }
+
+  .weather-info img {
+    width: 80px;
+    height: 80px;
+  }
+}
